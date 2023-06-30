@@ -87,6 +87,9 @@ DATABASES = {
         'PASSWORD':config('DB_PASSWORD'),
         'HOST':config('DB_HOST'),
         'PORT':config('DB_PORT'),
+        'OPTIONS': {
+            'read_default_file': '/path/para/my.cnf',
+        },
     }
 }
 
